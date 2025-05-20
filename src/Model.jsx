@@ -6,18 +6,12 @@ export function Model() {
 
   const X = useRef(null);
 
-  //   useFrame(() => {
-  //     X.current.rotation.x += 0.009;
-  //     X.current.rotation.y += 0.009;
-  //     X.current.rotation.z += 0.009;
-  //   });
-
   const materialProps = useControls({
-    thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-    roughness: { value: 0, min: 0, max: 1, step: 0.1 },
+    thickness: { value: 1.85, min: 0, max: 3, step: 0.05 },
+    roughness: { value: 0.2, min: 0, max: 1, step: 0.1 },
     transmission: { value: 1, min: 0, max: 1, step: 0.1 },
     ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
-    chromaticAberration: { value: 0.02, min: 0, max: 1 },
+    chromaticAberration: { value: 1, min: 0, max: 1 },
     backside: { value: true },
   });
 

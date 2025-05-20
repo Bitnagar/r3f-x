@@ -7,7 +7,7 @@ function App() {
   return (
     <Canvas
       camera={{ position: [40, 5, 5], fov: 20 }}
-      style={{ backgroundColor: "#0e2b6c" }}
+      style={{ backgroundColor: "#070612" }}
     >
       <Model />
       <Environment preset="city" />
